@@ -1,0 +1,14 @@
+# Instalar dependências
+npm install @prisma/client prisma
+
+# Inicializar o Prisma
+npx prisma init
+
+# Criar migração e aplicar no banco
+npx prisma migrate dev --name init
+
+# Gerar o client do Prisma
+npx prisma generate
+
+# Executar o script
+node index.js
